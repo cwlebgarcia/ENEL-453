@@ -1,0 +1,9 @@
+Time resolution is 1 ps
+Time = 0: switches_inputs = 0000000000000000, led = 1111111100000000
+Time = 10000: switches_inputs = 1111111111111111, led = 0000000011111111
+Time = 20000: switches_inputs = 0101010101010101, led = 1010101001010100
+Time = 30000: switches_inputs = 1010101010101010, led = 0101010110101010
+Time = 40000: switches_inputs = 1100110011001100, led = 0011001111001100
+Time = 50000: switches_inputs = 0011001100110011, led = 1100110000110011
+$stop called at time : 110 ns : File "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1/lab_1a_top_level_tb.sv" Line 43
+The simulator has terminated in an unexpected manner with exit code 1073807364.  Please review the simulation log (xsim.log) for details.

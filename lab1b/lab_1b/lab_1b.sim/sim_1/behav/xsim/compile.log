@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/digit_multiplexor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module digit_multiplexor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/lab_1b_top_level.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab_1b_top_level
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/seven_segment_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/seven_segment_digit_selector.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_segment_digit_selector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/seven_segment_display_subsystem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_segment_display_subsystem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/switch_logic.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module switch_logic
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/lab_1b_top_level_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab_1b_top_level_tb

@@ -1,0 +1,8 @@
+Time resolution is 1 ps
+Time = 0: switches_inputs = 0000000000000000, led = 0000000000000000
+Time = 100000: switches_inputs = 1111111111111111, led = 1111111111111111
+Time = 200000: switches_inputs = 0101010101010101, led = 0101010101010101
+Time = 300000: switches_inputs = 1010101010101010, led = 1010101010101010
+Time = 400000: switches_inputs = 1100110011001100, led = 1100110011001100
+Time = 500000: switches_inputs = 0011001100110011, led = 0011001100110011
+$stop called at time : 650 ns : File "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/lab_1b_top_level_tb.sv" Line 58

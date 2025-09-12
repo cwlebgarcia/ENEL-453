@@ -1,0 +1,8 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1/lab1a/lab1a.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1/lab_1a_top_level.sv,1756927402,systemVerilog,,C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1/switch_logic.sv,,lab_1a_top_level,,uvm,../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1/lab_1a_top_level_tb.sv,1756927402,systemVerilog,,,,lab_1a_top_level_tb,,uvm,../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1/switch_logic.sv,1756927402,systemVerilog,,C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1/lab_1a_top_level_tb.sv,,switch_logic,,uvm,../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,

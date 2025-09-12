@@ -1,0 +1,12 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/digit_multiplexor.sv,1757099575,systemVerilog,,C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/lab_1b_top_level.sv,,digit_multiplexor,,uvm,../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/lab_1b.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/lab_1b_top_level.sv,1757639846,systemVerilog,,C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/seven_segment_decoder.sv,,lab_1b_top_level,,uvm,../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/lab_1b_top_level_tb.sv,1757639539,systemVerilog,,,,lab_1b_top_level_tb,,uvm,../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+,,,,C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/seven_segment_digit_selector.sv,,seven_segment_decoder,,,,,,,,
+,,,,C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/seven_segment_display_subsystem.sv,,seven_segment_digit_selector,,,,,,,,
+,,,,C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/switch_logic.sv,,seven_segment_display_subsystem,,,,,,,,
+C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/switch_logic.sv,1757619444,systemVerilog,,C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/lab_1b_top_level_tb.sv,,switch_logic,,uvm,../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
