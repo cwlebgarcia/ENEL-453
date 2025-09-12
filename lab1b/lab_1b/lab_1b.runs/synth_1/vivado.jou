@@ -3,22 +3,22 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Thu Sep 11 13:43:43 2025
-# Process ID         : 10528
-# Current directory  : C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/lab_1b.runs/synth_1
-# Command line       : vivado.exe -log lab_1a_top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab_1a_top_level.tcl
-# Log file           : C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/lab_1b.runs/synth_1/lab_1a_top_level.vds
-# Journal file       : C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/lab_1b.runs/synth_1\vivado.jou
-# Running On         : VikramAsus
+# Start of session at: Fri Sep 12 13:13:34 2025
+# Process ID         : 19264
+# Current directory  : C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b.runs/synth_1
+# Command line       : vivado.exe -log lab_1b_top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab_1b_top_level.tcl
+# Log file           : C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b.runs/synth_1/lab_1b_top_level.vds
+# Journal file       : C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b.runs/synth_1\vivado.jou
+# Running On         : RockCollector
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26100
-# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-1335U
-# CPU Frequency      : 2496 MHz
-# CPU Physical cores : 10
-# CPU Logical cores  : 12
-# Host memory        : 16786 MB
-# Swap memory        : 20401 MB
-# Total Virtual      : 37187 MB
-# Available Virtual  : 19025 MB
+# Processor Detail   : AMD Ryzen 7 5700U with Radeon Graphics         
+# CPU Frequency      : 1797 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16486 MB
+# Swap memory        : 1883 MB
+# Total Virtual      : 18369 MB
+# Available Virtual  : 3741 MB
 #-----------------------------------------------------------
-source lab_1a_top_level.tcl -notrace
+source lab_1b_top_level.tcl -notrace

@@ -8,7 +8,7 @@ module lab_1b_top_level_tb();
     // Signals
     logic [15:0] switches_inputs;
     logic [15:0] led;
-    logic [7:0]  segs;
+    logic [6:0]  segs;
     logic [3:0]  ans;
 
     logic reset;
@@ -35,6 +35,15 @@ module lab_1b_top_level_tb();
     initial begin
         // Initialize inputs
 
+        reset = 0;
+        #(CLK_PERIOD);
+
+        reset = 1;
+        #CLK_PERIOD
+        reset = 0;
+        #CLK_PERIOD
+
+
         // Test case 0:
         switches_inputs = 16'b0000_0000_0000_0000; #(10*CLK_PERIOD);
         
@@ -60,8 +69,8 @@ module lab_1b_top_level_tb();
 
     // Optional: Monitor changes
     initial begin
-        $monitor("Time = %0t: switches_inputs = %b, led = %b", 
-                 $time, switches_inputs, led);
+        $monitor("Time = %0t: switches_inputs = %b, led = %b, segs = %b, ans", 
+                 $time, switches_inputs, led, segs, ans);
     end
 
 endmodule

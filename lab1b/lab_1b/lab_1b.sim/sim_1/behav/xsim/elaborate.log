@@ -5,21 +5,21 @@ Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-5021] port 'decimal_point' is not connected on this instance [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/lab_1b_top_level.sv:22]
+WARNING: [VRFC 10-5021] port 'decimal_point' is not connected on this instance [C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b_top_level.sv:22]
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/lab_1b_top_level.sv" Line 1. Module lab_1b_top_level doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/switch_logic.sv" Line 1. Module switch_logic doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/seven_segment_display_subsystem.sv" Line 26. Module seven_segment_display_subsystem doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/digit_multiplexor.sv" Line 39. Module digit_multiplexor doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/seven_segment_digit_selector.sv" Line 36. Module seven_segment_digit_selector doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/seven_segment_decoder.sv" Line 37. Module seven_segment_decoder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/lab_1b_top_level.sv" Line 1. Module lab_1b_top_level doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/switch_logic.sv" Line 1. Module switch_logic doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/seven_segment_display_subsystem.sv" Line 26. Module seven_segment_display_subsystem doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/digit_multiplexor.sv" Line 39. Module digit_multiplexor doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/seven_segment_digit_selector.sv" Line 36. Module seven_segment_digit_selector doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/lab1b/lab_1b/seven_segment_decoder.sv" Line 37. Module seven_segment_decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b_top_level.sv" Line 1. Module lab_1b_top_level doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/switch_logic.sv" Line 1. Module switch_logic doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/seven_segment_display_subsystem.sv" Line 26. Module seven_segment_display_subsystem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/digit_multiplexor.sv" Line 39. Module digit_multiplexor doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/seven_segment_digit_selector.sv" Line 36. Module seven_segment_digit_selector doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/seven_segment_decoder.sv" Line 37. Module seven_segment_decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b_top_level.sv" Line 1. Module lab_1b_top_level doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/switch_logic.sv" Line 1. Module switch_logic doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/seven_segment_display_subsystem.sv" Line 26. Module seven_segment_display_subsystem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/digit_multiplexor.sv" Line 39. Module digit_multiplexor doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/seven_segment_digit_selector.sv" Line 36. Module seven_segment_digit_selector doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/seven_segment_decoder.sv" Line 37. Module seven_segment_decoder doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.switch_logic

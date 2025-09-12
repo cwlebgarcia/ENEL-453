@@ -11,7 +11,7 @@ module lab_1b_top_level (
     // Internal signal declarations
 
     logic [15:0] switches_outputs;
-    
+
     // Instantiate components
 
     switch_logic SWITCHES (
