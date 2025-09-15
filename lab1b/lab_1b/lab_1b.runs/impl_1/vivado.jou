@@ -3,22 +3,22 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Fri Sep 12 13:15:10 2025
-# Process ID         : 19220
-# Current directory  : C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b.runs/impl_1
+# Start of session at: Mon Sep 15 17:13:34 2025
+# Process ID         : 22656
+# Current directory  : C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/lab_1b.runs/impl_1
 # Command line       : vivado.exe -log lab_1b_top_level.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab_1b_top_level.tcl -notrace
-# Log file           : C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b.runs/impl_1/lab_1b_top_level.vdi
-# Journal file       : C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b.runs/impl_1\vivado.jou
-# Running On         : RockCollector
+# Log file           : C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/lab_1b.runs/impl_1/lab_1b_top_level.vdi
+# Journal file       : C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/lab_1b.runs/impl_1\vivado.jou
+# Running On         : Chloes_Laptop
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26100
-# Processor Detail   : AMD Ryzen 7 5700U with Radeon Graphics         
-# CPU Frequency      : 1797 MHz
+# Processor Detail   : AMD Ryzen 7 8840U w/ Radeon 780M Graphics      
+# CPU Frequency      : 3294 MHz
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
-# Host memory        : 16486 MB
-# Swap memory        : 1815 MB
-# Total Virtual      : 18301 MB
-# Available Virtual  : 3757 MB
+# Host memory        : 16398 MB
+# Swap memory        : 38654 MB
+# Total Virtual      : 55053 MB
+# Available Virtual  : 29611 MB
 #-----------------------------------------------------------
 source lab_1b_top_level.tcl -notrace

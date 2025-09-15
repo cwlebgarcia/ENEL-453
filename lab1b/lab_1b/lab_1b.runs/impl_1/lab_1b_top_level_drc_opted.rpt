@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Fri Sep 12 13:16:03 2025
-| Host         : RockCollector running 64-bit major release  (build 9200)
+| Date         : Mon Sep 15 17:13:59 2025
+| Host         : Chloes_Laptop running 64-bit major release  (build 9200)
 | Command      : report_drc -file lab_1b_top_level_drc_opted.rpt -pb lab_1b_top_level_drc_opted.pb -rpx lab_1b_top_level_drc_opted.rpx
 | Design       : lab_1b_top_level
 | Device       : xc7a35tcpg236-1

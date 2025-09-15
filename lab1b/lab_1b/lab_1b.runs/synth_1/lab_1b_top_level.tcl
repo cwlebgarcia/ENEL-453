@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b.runs/synth_1/lab_1b_top_level.tcl"
+  variable script "C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/lab_1b.runs/synth_1/lab_1b_top_level.tcl"
   variable category "vivado_synth"
 }
 
@@ -58,10 +58,9 @@ if {$::dispatch::connected} {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
 set_param general.usePosixSpawnForFork 1
-set_param synth.incrementalSynthesisCache C:/Users/caleb/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-5076-RockCollector/incrSyn
+set_param synth.incrementalSynthesisCache C:/Users/fulbr/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-11740-Chloes_Laptop/incrSyn
 set_param checkpoint.writeSynthRtdsInDcp 1
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -70,21 +69,21 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b.cache/wt [current_project]
-set_property parent.project_path C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b.xpr [current_project]
+set_property webtalk.parent_dir {C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/lab_1b.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/lab_1b.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b.cache/ip [current_project]
+set_property ip_output_repo {c:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/lab_1b.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/digit_multiplexor.sv
-  C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/seven_segment_decoder.sv
-  C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/seven_segment_digit_selector.sv
-  C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/seven_segment_display_subsystem.sv
-  C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/switch_logic.sv
-  C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b_top_level.sv
+  {C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/digit_multiplexor.sv}
+  {C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/seven_segment_decoder.sv}
+  {C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/seven_segment_digit_selector.sv}
+  {C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/seven_segment_display_subsystem.sv}
+  {C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/switch_logic.sv}
+  {C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/lab_1b_top_level.sv}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -95,12 +94,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab1b_Basys_3_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab1b_Basys_3_Master.xdc]
+read_xdc {{C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/lab1b_Basys_3_Master.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/lab1b_Basys_3_Master.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b.srcs/utils_1/imports/synth_1/lab_1a_top_level.dcp
+read_checkpoint -auto_incremental -incremental {C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/lab_1b.srcs/utils_1/imports/synth_1/lab_1a_top_level.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

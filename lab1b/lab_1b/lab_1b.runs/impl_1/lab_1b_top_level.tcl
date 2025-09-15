@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b.runs/impl_1/lab_1b_top_level.tcl"
+  variable script "C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/lab_1b.runs/impl_1/lab_1b_top_level.tcl"
   variable category "vivado_impl"
 }
 
@@ -97,7 +97,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 
@@ -109,7 +108,7 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 4
   set_param general.usePosixSpawnForFork 1
-  set_param synth.incrementalSynthesisCache C:/Users/caleb/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-5076-RockCollector/incrSyn
+  set_param synth.incrementalSynthesisCache C:/Users/fulbr/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-11740-Chloes_Laptop/incrSyn
   set_param checkpoint.writeSynthRtdsInDcp 1
   set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 16  }
@@ -119,15 +118,15 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b.cache/wt [current_project]
-  set_property parent.project_path C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b.xpr [current_project]
-  set_property ip_output_repo C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b.cache/ip [current_project]
+  set_property webtalk.parent_dir {C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/lab_1b.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/lab_1b.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/lab_1b.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab_1b.runs/synth_1/lab_1b_top_level.dcp
+  add_files -quiet {{C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/lab_1b.runs/synth_1/lab_1b_top_level.dcp}}
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/caleb/Documents/ENEL-453/lab1b/lab_1b/lab1b_Basys_3_Master.xdc
+  read_xdc {{C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/lab1b_Basys_3_Master.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

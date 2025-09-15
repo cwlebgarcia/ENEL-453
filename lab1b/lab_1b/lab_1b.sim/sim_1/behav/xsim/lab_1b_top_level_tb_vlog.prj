@@ -1,5 +1,5 @@
 # compile verilog/system verilog design source files
-sv xil_defaultlib  --include "../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" \
+sv xil_defaultlib  --include "../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" \
 "../../../../digit_multiplexor.sv" \
 "../../../../lab_1b_top_level.sv" \
 "../../../../seven_segment_decoder.sv" \
