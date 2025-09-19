@@ -4,9 +4,12 @@ module lab_2_top_level_tb();
 
     // Parameters
     parameter CLK_PERIOD = 10; // 10ns for 100MHz clock
+    parameter SHORT_WAIT = 1000;
+    parameter LONG_WAIT = 100000;
 
     // Signals
     logic [15:0] switches_inputs;
+    logic        btnU;
     logic [15:0] led;
     logic [6:0]  segs;
     logic [3:0]  ans;
@@ -24,6 +27,7 @@ module lab_2_top_level_tb();
     // Instantiate the Unit Under Test (UUT)
     lab_2_top_level uut (
         .switches_inputs(switches_inputs),
+        .btnU(btnU),
         .led(led),
         .clk(clk),
         .reset(reset),
@@ -34,10 +38,10 @@ module lab_2_top_level_tb();
     // Test stimulus
     initial begin
         // Initialize inputs
+        btnU = 0;
 
         reset = 0;
         #(CLK_PERIOD);
-
         reset = 1;
         #CLK_PERIOD
         reset = 0;
@@ -46,23 +50,29 @@ module lab_2_top_level_tb();
         #(100);
         
         // Test case 0:
-        switches_inputs = 16'b0000_0000_0000_0000; #(20*CLK_PERIOD);
-        
-        // Test case 1:
-        switches_inputs = 16'd456;   #(20*CLK_PERIOD);
+        switches_inputs = 16'b0000_0000_0000_0000; #LONG_WAIT; //#(20*CLK_PERIOD);
+        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
 
+        // Test case 1:
+        switches_inputs = 16'd456;   #LONG_WAIT; //#(20*CLK_PERIOD);
+        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
+        
         // Test case 2:
-        switches_inputs = 16'd1024;  #(20*CLK_PERIOD);
+        switches_inputs = 16'd1024; #LONG_WAIT; // #(20*CLK_PERIOD);
+        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
 
         // Test case 3:
-        switches_inputs = 16'd652;   #(20*CLK_PERIOD);
-        
+        switches_inputs = 16'd16052;  #LONG_WAIT; // #(20*CLK_PERIOD);
+        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
+
         // Test case 4:
-        switches_inputs = 16'd9998;  #(20*CLK_PERIOD);
-        
+        switches_inputs = 16'd9998; #LONG_WAIT; // #(20*CLK_PERIOD);
+        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
+
         // Test case 5:
-        switches_inputs = 16'd16012; #(20*CLK_PERIOD);
-        
+        switches_inputs = 16'd6012; #LONG_WAIT; // #(20*CLK_PERIOD);
+        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
+
         // End simulation
         #(5 * CLK_PERIOD);
         $stop;

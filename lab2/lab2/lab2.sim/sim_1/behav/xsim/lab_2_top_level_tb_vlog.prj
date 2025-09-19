@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" \
+"../../../../bin_to_bcd.sv" \
+"../../../../digit_multiplexor.sv" \
+"../../../../lab2_mux2.sv" \
+"../../../../lab_2_button_toggle.sv" \
+"../../../../lab_2_top_level.sv" \
+"../../../../seven_segment_decoder.sv" \
+"../../../../seven_segment_digit_selector.sv" \
+"../../../../seven_segment_display_subsystem.sv" \
+"../../../../switch_logic.sv" \
+"../../../../lab_2_top_level_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

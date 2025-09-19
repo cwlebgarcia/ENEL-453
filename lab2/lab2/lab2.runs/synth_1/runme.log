@@ -8,14 +8,14 @@
   **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
   **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
   **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-  **** Start of session at: Mon Sep 15 18:48:45 2025
+  **** Start of session at: Fri Sep 19 14:34:18 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source lab_2_top_level.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 491.863 ; gain = 211.750
-Command: read_checkpoint -auto_incremental -incremental {C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab2.srcs/utils_1/imports/synth_1/lab_2_top_level.dcp}
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab2.srcs/utils_1/imports/synth_1/lab_2_top_level.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 493.016 ; gain = 211.141
+Command: read_checkpoint -auto_incremental -incremental C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2.srcs/utils_1/imports/synth_1/lab_2_top_level.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2.srcs/utils_1/imports/synth_1/lab_2_top_level.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top lab_2_top_level -part xc7a35tcpg236-1
 Starting synth_design
@@ -26,76 +26,89 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 408
+INFO: [Synth 8-7075] Helper process launched with PID 3772
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1178.219 ; gain = 493.234
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1178.238 ; gain = 494.902
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'lab_2_top_level' [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab_2_top_level.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'switch_logic' [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/switch_logic.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'switch_logic' (0#1) [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/switch_logic.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'seven_segment_display_subsystem' [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/seven_segment_display_subsystem.sv:26]
-INFO: [Synth 8-6157] synthesizing module 'digit_multiplexor' [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/digit_multiplexor.sv:39]
-INFO: [Synth 8-6155] done synthesizing module 'digit_multiplexor' (0#1) [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/digit_multiplexor.sv:39]
-INFO: [Synth 8-6157] synthesizing module 'seven_segment_digit_selector' [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/seven_segment_digit_selector.sv:36]
-INFO: [Synth 8-6155] done synthesizing module 'seven_segment_digit_selector' (0#1) [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/seven_segment_digit_selector.sv:36]
-INFO: [Synth 8-6157] synthesizing module 'seven_segment_decoder' [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/seven_segment_decoder.sv:37]
-INFO: [Synth 8-226] default block is never used [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/seven_segment_decoder.sv:55]
-INFO: [Synth 8-6155] done synthesizing module 'seven_segment_decoder' (0#1) [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/seven_segment_decoder.sv:37]
-INFO: [Synth 8-6155] done synthesizing module 'seven_segment_display_subsystem' (0#1) [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/seven_segment_display_subsystem.sv:26]
-WARNING: [Synth 8-7071] port 'decimal_point' of module 'seven_segment_display_subsystem' is unconnected for instance 'SEVEN_SEG' [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab_2_top_level.sv:23]
-WARNING: [Synth 8-7023] instance 'SEVEN_SEG' of module 'seven_segment_display_subsystem' has 19 connections declared, but only 18 given [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab_2_top_level.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'bin_to_bcd' [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/bin_to_bcd.sv:43]
-INFO: [Synth 8-6155] done synthesizing module 'bin_to_bcd' (0#1) [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/bin_to_bcd.sv:43]
-INFO: [Synth 8-6155] done synthesizing module 'lab_2_top_level' (0#1) [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab_2_top_level.sv:1]
-WARNING: [Synth 8-6014] Unused sequential element ready_reg was removed.  [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/bin_to_bcd.sv:59]
+INFO: [Synth 8-6157] synthesizing module 'lab_2_top_level' [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab_2_top_level.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'switch_logic' [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/switch_logic.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'switch_logic' (0#1) [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/switch_logic.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_display_subsystem' [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/seven_segment_display_subsystem.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'digit_multiplexor' [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/digit_multiplexor.sv:39]
+INFO: [Synth 8-6155] done synthesizing module 'digit_multiplexor' (0#1) [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/digit_multiplexor.sv:39]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_digit_selector' [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/seven_segment_digit_selector.sv:36]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_digit_selector' (0#1) [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/seven_segment_digit_selector.sv:36]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_decoder' [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/seven_segment_decoder.sv:37]
+INFO: [Synth 8-226] default block is never used [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/seven_segment_decoder.sv:55]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_decoder' (0#1) [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/seven_segment_decoder.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_display_subsystem' (0#1) [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/seven_segment_display_subsystem.sv:26]
+WARNING: [Synth 8-7071] port 'decimal_point' of module 'seven_segment_display_subsystem' is unconnected for instance 'SEVEN_SEG' [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab_2_top_level.sv:26]
+WARNING: [Synth 8-7023] instance 'SEVEN_SEG' of module 'seven_segment_display_subsystem' has 19 connections declared, but only 18 given [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab_2_top_level.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'bin_to_bcd' [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/bin_to_bcd.sv:43]
+INFO: [Synth 8-6155] done synthesizing module 'bin_to_bcd' (0#1) [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/bin_to_bcd.sv:43]
+INFO: [Synth 8-6157] synthesizing module 'lab2_mux2' [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2_mux2.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'lab2_mux2' (0#1) [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2_mux2.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'button_toggle' [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab_2_button_toggle.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'button_toggle' (0#1) [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab_2_button_toggle.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'lab_2_top_level' (0#1) [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab_2_top_level.sv:1]
+WARNING: [Synth 8-6014] Unused sequential element ready_reg was removed.  [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/bin_to_bcd.sv:59]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1285.340 ; gain = 600.355
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1284.594 ; gain = 601.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1285.340 ; gain = 600.355
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1284.594 ; gain = 601.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1285.340 ; gain = 600.355
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1284.594 ; gain = 601.258
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1285.340 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1284.594 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab2_Basys_3_Master.xdc]
-Finished Parsing XDC File [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab2_Basys_3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab2_Basys_3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab_2_top_level_propImpl.xdc].
+Parsing XDC File [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2_Basys_3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2_Basys_3_Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2_Basys_3_Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2_Basys_3_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2_Basys_3_Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2_Basys_3_Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2_Basys_3_Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2_Basys_3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2_Basys_3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab_2_top_level_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/lab_2_top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1367.254 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1363.113 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1367.254 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1363.113 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1367.254 ; gain = 682.270
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1363.113 ; gain = 679.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1367.254 ; gain = 682.270
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1363.113 ; gain = 679.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1367.254 ; gain = 682.270
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1363.113 ; gain = 679.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1367.254 ; gain = 682.270
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1363.113 ; gain = 679.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -109,13 +122,14 @@ Detailed RTL Component Info :
 	               16 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input   31 Bit        Muxes := 1     
-	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
 	   2 Input   13 Bit        Muxes := 1     
 	   4 Input    5 Bit        Muxes := 1     
 	   2 Input    4 Bit        Muxes := 4     
-	   2 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 2     
 	   4 Input    1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -134,25 +148,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1367.254 ; gain = 682.270
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1363.113 ; gain = 679.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1499.520 ; gain = 814.535
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1489.379 ; gain = 806.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1524.949 ; gain = 839.965
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1519.102 ; gain = 835.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1528.109 ; gain = 843.125
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1522.965 ; gain = 839.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -170,37 +184,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1748.387 ; gain = 1063.402
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1741.098 ; gain = 1057.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1748.387 ; gain = 1063.402
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1741.098 ; gain = 1057.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1748.387 ; gain = 1063.402
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1741.098 ; gain = 1057.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1748.387 ; gain = 1063.402
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1741.098 ; gain = 1057.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1748.387 ; gain = 1063.402
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1741.098 ; gain = 1057.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1748.387 ; gain = 1063.402
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1741.098 ; gain = 1057.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -219,38 +233,39 @@ Report Cell Usage:
 |1     |BUFG   |     1|
 |2     |CARRY4 |     5|
 |3     |LUT1   |     5|
-|4     |LUT2   |     2|
+|4     |LUT2   |     3|
 |5     |LUT3   |    15|
-|6     |LUT4   |    15|
-|7     |LUT5   |    47|
-|8     |LUT6   |     8|
-|9     |FDRE   |    71|
+|6     |LUT4   |    33|
+|7     |LUT5   |    46|
+|8     |LUT6   |    10|
+|9     |FDRE   |    73|
 |10    |FDSE   |     3|
-|11    |IBUF   |    18|
+|11    |IBUF   |    19|
 |12    |OBUF   |    28|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1748.387 ; gain = 1063.402
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1741.098 ; gain = 1057.762
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 1748.387 ; gain = 981.488
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1748.387 ; gain = 1063.402
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1741.098 ; gain = 979.242
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1741.098 ; gain = 1057.762
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1753.922 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1741.098 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1757.512 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1741.098 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 9712e281
+Synth Design complete | Checksum: c0a90c9a
 INFO: [Common 17-83] Releasing license: Synthesis
-36 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+40 Infos, 7 Warnings, 3 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 1757.512 ; gain = 1259.773
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1757.512 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab2.runs/synth_1/lab_2_top_level.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:01:04 . Memory (MB): peak = 1741.098 ; gain = 1242.438
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1741.098 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2.runs/synth_1/lab_2_top_level.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file lab_2_top_level_utilization_synth.rpt -pb lab_2_top_level_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Sep 15 18:49:32 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 19 14:35:32 2025...

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Mon Sep 15 17:14:02 2025
+| Date         : Fri Sep 19 11:19:38 2025
 | Host         : Chloes_Laptop running 64-bit major release  (build 9200)
 | Command      : report_utilization -file lab_1b_top_level_utilization_placed.rpt -pb lab_1b_top_level_utilization_placed.pb
 | Design       : lab_1b_top_level
@@ -32,8 +32,8 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs              |   30 |     0 |          0 |     20800 |  0.14 |
-|   LUT as Logic          |   30 |     0 |          0 |     20800 |  0.14 |
+| Slice LUTs              |   29 |     0 |          0 |     20800 |  0.14 |
+|   LUT as Logic          |   29 |     0 |          0 |     20800 |  0.14 |
 |   LUT as Memory         |    0 |     0 |          0 |      9600 |  0.00 |
 | Slice Registers         |   21 |     0 |          0 |     41600 |  0.05 |
 |   Register as Flip Flop |   21 |     0 |          0 |     41600 |  0.05 |
@@ -70,11 +70,11 @@ Table of Contents
 |                 Site Type                | Used | Fixed | Prohibited | Available | Util% |
 +------------------------------------------+------+-------+------------+-----------+-------+
 | Slice                                    |   14 |     0 |          0 |      8150 |  0.17 |
-|   SLICEL                                 |   12 |     0 |            |           |       |
-|   SLICEM                                 |    2 |     0 |            |           |       |
-| LUT as Logic                             |   30 |     0 |          0 |     20800 |  0.14 |
+|   SLICEL                                 |   13 |     0 |            |           |       |
+|   SLICEM                                 |    1 |     0 |            |           |       |
+| LUT as Logic                             |   29 |     0 |          0 |     20800 |  0.14 |
 |   using O5 output only                   |    0 |       |            |           |       |
-|   using O6 output only                   |   22 |       |            |           |       |
+|   using O6 output only                   |   21 |       |            |           |       |
 |   using O5 and O6                        |    8 |       |            |           |       |
 | LUT as Memory                            |    0 |     0 |          0 |      9600 |  0.00 |
 |   LUT as Distributed RAM                 |    0 |     0 |            |           |       |
@@ -186,13 +186,13 @@ Table of Contents
 | OBUF     |   28 |                  IO |
 | IBUF     |   18 |                  IO |
 | FDRE     |   18 |        Flop & Latch |
-| LUT4     |   13 |                 LUT |
-| LUT5     |   10 |                 LUT |
-| LUT6     |    7 |                 LUT |
+| LUT4     |   17 |                 LUT |
+| LUT5     |    7 |                 LUT |
+| LUT6     |    6 |                 LUT |
 | LUT1     |    5 |                 LUT |
 | CARRY4   |    5 |          CarryLogic |
-| LUT3     |    3 |                 LUT |
 | FDSE     |    3 |        Flop & Latch |
+| LUT3     |    2 |                 LUT |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 

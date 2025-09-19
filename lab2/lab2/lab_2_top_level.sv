@@ -43,17 +43,18 @@ module lab_2_top_level (
     );
 
     lab2_mux2 BCDMUX(
-        .s({switches_outputs, bcd_out})
-        .ctrl(decimal_display)
+        .s0(switches_outputs),
+        .s1(bcd_out),
+        .ctrl(decimal_display),
         .y(display_segs)
-    )
+    );
 
     button_toggle BUTTONTOGGLE(
         .button(btnU),
         .clk(clk),
         .reset(reset),
         .toggle(decimal_display)
-    )
+    );
 
     assign led = switches_outputs;
 

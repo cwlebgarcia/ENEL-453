@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date             : Mon Sep 15 17:14:28 2025
+| Date             : Fri Sep 19 11:20:03 2025
 | Host             : Chloes_Laptop running 64-bit major release  (build 9200)
 | Command          : report_power -file lab_1b_top_level_power_routed.rpt -pb lab_1b_top_level_power_summary_routed.pb -rpx lab_1b_top_level_power_routed.rpx
 | Design           : lab_1b_top_level
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 0.096        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.024        |
+| Dynamic (W)              | 0.025        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -53,13 +53,13 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       67 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       30 |     20800 |            0.14 |
+| Slice Logic    |    <0.001 |       66 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       29 |     20800 |            0.14 |
 |   CARRY4       |    <0.001 |        5 |      8150 |            0.06 |
 |   Register     |    <0.001 |       21 |     41600 |            0.05 |
 |   Others       |     0.000 |        3 |       --- |             --- |
-| Signals        |    <0.001 |       75 |       --- |             --- |
-| I/O            |     0.023 |       46 |       106 |           43.40 |
+| Signals        |    <0.001 |       74 |       --- |             --- |
+| I/O            |     0.024 |       46 |       106 |           43.40 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.096 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
@@ -140,7 +140,7 @@ Table of Contents
 +------------------+-----------+
 | Name             | Power (W) |
 +------------------+-----------+
-| lab_1b_top_level |     0.024 |
+| lab_1b_top_level |     0.025 |
 +------------------+-----------+
 
 

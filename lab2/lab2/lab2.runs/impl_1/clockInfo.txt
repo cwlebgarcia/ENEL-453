@@ -1,7 +1,7 @@
 -------------------------------------
 | Tool Version : Vivado v.2025.1
-| Date         : Mon Sep 15 18:50:09 2025
-| Host         : Chloes_Laptop
+| Date         : Fri Sep 19 14:36:12 2025
+| Host         : VikramAsus
 | Design       : design_1
 | Device       : xc7a35t-cpg236-1--
 -------------------------------------

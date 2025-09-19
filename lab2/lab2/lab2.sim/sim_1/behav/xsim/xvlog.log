@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab2_mux2.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module lab2_mux2
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab2_mux2_tb.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module lab2_mux2_tb

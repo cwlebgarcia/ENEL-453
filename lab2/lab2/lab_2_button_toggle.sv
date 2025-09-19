@@ -7,7 +7,7 @@ module button_toggle (
 
 logic pressed;
 
-always_ff @(posedge clk) begin
+always_ff @(negedge clk) begin
     if (reset) begin
         toggle <= 0;
         pressed <= 0;
@@ -16,6 +16,8 @@ always_ff @(posedge clk) begin
             pressed <= 1;
         end else if (~button & pressed) begin
             toggle <= ~toggle;
+            pressed <= 0;
         end
     end
 end
+endmodule

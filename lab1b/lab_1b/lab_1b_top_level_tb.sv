@@ -34,14 +34,15 @@ module lab_1b_top_level_tb();
     // Test stimulus
     initial begin
         // Initialize inputs
+        #(100)
 
-        reset = 0;
-        #(CLK_PERIOD);
+         reset = 0;
+         #(CLK_PERIOD);
 
-        reset = 1;
-        #CLK_PERIOD
-        reset = 0;
-        #CLK_PERIOD
+         reset = 1;
+         #CLK_PERIOD
+         reset = 0;
+         #CLK_PERIOD
 
 
         // Test case 0:
@@ -60,7 +61,7 @@ module lab_1b_top_level_tb();
         switches_inputs = 16'b1100_1100_1100_1100; #(10*CLK_PERIOD);
         
         // Test case 5:
-        switches_inputs = 16'b0011_0011_0011_0011; #(10*CLK_PERIOD);
+        switches_inputs = 16'b0011_0110_0101_1001; #(10*CLK_PERIOD);
         
         // End simulation
         #(5 * CLK_PERIOD);

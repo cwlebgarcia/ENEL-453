@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Mon Sep 15 18:50:35 2025
-| Host         : Chloes_Laptop running 64-bit major release  (build 9200)
+| Date         : Fri Sep 19 14:36:41 2025
+| Host         : VikramAsus running 64-bit major release  (build 9200)
 | Command      : report_methodology -file lab_2_top_level_methodology_drc_routed.rpt -pb lab_2_top_level_methodology_drc_routed.pb -rpx lab_2_top_level_methodology_drc_routed.rpx
 | Design       : lab_2_top_level
 | Device       : xc7a35tcpg236-1
@@ -23,151 +23,156 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 28
+             Checks found: 29
 +-----------+----------+-------------------------------+--------+
 | Rule      | Severity | Description                   | Checks |
 +-----------+----------+-------------------------------+--------+
-| TIMING-18 | Warning  | Missing input or output delay | 28     |
+| TIMING-18 | Warning  | Missing input or output delay | 29     |
 +-----------+----------+-------------------------------+--------+
 
 2. REPORT DETAILS
 -----------------
 TIMING-18#1 Warning
 Missing input or output delay  
-An input delay is missing on reset relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on btnU relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#2 Warning
 Missing input or output delay  
-An input delay is missing on switches_inputs[0] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on reset relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#3 Warning
 Missing input or output delay  
-An input delay is missing on switches_inputs[10] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on switches_inputs[0] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#4 Warning
 Missing input or output delay  
-An input delay is missing on switches_inputs[11] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on switches_inputs[10] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#5 Warning
 Missing input or output delay  
-An input delay is missing on switches_inputs[12] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on switches_inputs[11] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#6 Warning
 Missing input or output delay  
-An input delay is missing on switches_inputs[13] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on switches_inputs[12] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#7 Warning
 Missing input or output delay  
-An input delay is missing on switches_inputs[14] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on switches_inputs[13] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#8 Warning
 Missing input or output delay  
-An input delay is missing on switches_inputs[15] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on switches_inputs[14] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#9 Warning
 Missing input or output delay  
-An input delay is missing on switches_inputs[1] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on switches_inputs[15] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#10 Warning
 Missing input or output delay  
-An input delay is missing on switches_inputs[2] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on switches_inputs[1] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#11 Warning
 Missing input or output delay  
-An input delay is missing on switches_inputs[3] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on switches_inputs[2] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#12 Warning
 Missing input or output delay  
-An input delay is missing on switches_inputs[4] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on switches_inputs[3] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#13 Warning
 Missing input or output delay  
-An input delay is missing on switches_inputs[5] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on switches_inputs[4] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#14 Warning
 Missing input or output delay  
-An input delay is missing on switches_inputs[6] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on switches_inputs[5] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#15 Warning
 Missing input or output delay  
-An input delay is missing on switches_inputs[7] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on switches_inputs[6] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#16 Warning
 Missing input or output delay  
-An input delay is missing on switches_inputs[8] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on switches_inputs[7] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#17 Warning
 Missing input or output delay  
-An input delay is missing on switches_inputs[9] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on switches_inputs[8] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#18 Warning
 Missing input or output delay  
-An output delay is missing on AN1 relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An input delay is missing on switches_inputs[9] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#19 Warning
 Missing input or output delay  
-An output delay is missing on AN2 relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on AN1 relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#20 Warning
 Missing input or output delay  
-An output delay is missing on AN3 relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on AN2 relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#21 Warning
 Missing input or output delay  
-An output delay is missing on AN4 relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on AN3 relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#22 Warning
 Missing input or output delay  
-An output delay is missing on CA relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on AN4 relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#23 Warning
 Missing input or output delay  
-An output delay is missing on CB relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on CA relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#24 Warning
 Missing input or output delay  
-An output delay is missing on CC relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on CB relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#25 Warning
 Missing input or output delay  
-An output delay is missing on CD relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on CC relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#26 Warning
 Missing input or output delay  
-An output delay is missing on CE relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on CD relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#27 Warning
 Missing input or output delay  
-An output delay is missing on CF relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on CE relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on CF relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#29 Warning
 Missing input or output delay  
 An output delay is missing on CG relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>

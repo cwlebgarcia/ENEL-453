@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab2.runs/impl_1/lab_2_top_level.tcl"
+  variable script "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2.runs/impl_1/lab_2_top_level.tcl"
   variable category "vivado_impl"
 }
 
@@ -97,8 +97,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -106,27 +104,24 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 4
+  set_param chipscope.maxJobs 3
   set_param general.usePosixSpawnForFork 1
-  set_param synth.incrementalSynthesisCache C:/Users/fulbr/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-11740-Chloes_Laptop/incrSyn
-  set_param checkpoint.writeSynthRtdsInDcp 1
-  set_param xicom.use_bs_reader 1
-  set_param runs.launchOptions { -jobs 16  }
+  set_param runs.launchOptions { -jobs 6  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir {C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab2.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab2.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab2.cache/ip}} [current_project]
+  set_property webtalk.parent_dir C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2.cache/wt [current_project]
+  set_property parent.project_path C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2.xpr [current_project]
+  set_property ip_output_repo C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet {{C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab2.runs/synth_1/lab_2_top_level.dcp}}
+  add_files -quiet C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2.runs/synth_1/lab_2_top_level.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc {{C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab2_Basys_3_Master.xdc}}
+  read_xdc C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab2_Basys_3_Master.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

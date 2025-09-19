@@ -1,10 +1,17 @@
 Time resolution is 1 ps
-Time = 0: s = 00, ctrl = 0
-Time = 200000: s = 01, ctrl = 0
-Time = 400000: s = 10, ctrl = 0
-Time = 600000: s = 11, ctrl = 0
-Time = 800000: s = 00, ctrl = 1
-Time = 1000000: s = 01, ctrl = 1
-Time = 1200000: s = 10, ctrl = 1
-Time = 1400000: s = 11, ctrl = 1
-$stop called at time : 1650 ns : File "C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab2_mux2_tb.sv" Line 85
+Time = 0: switches_inputs = xxxxxxxxxxxxxxxx, led = xxxxxxxxxxxxxxxx, segs = 1000000, ans x
+Time = 15000: switches_inputs = xxxxxxxxxxxxxxxx, led = xxxxxxxxxxxxxxxx, segs = 1000000, ans 0
+Time = 25000: switches_inputs = xxxxxxxxxxxxxxxx, led = xxxxxxxxxxxxxxxx, segs = 1111111, ans 7
+Time = 130000: switches_inputs = 0000000000000000, led = 0000000000000000, segs = 1000000, ans 7
+Time = 201130000: switches_inputs = 0000000111001000, led = 0000000111001000, segs = 1000000, ans 7
+Time = 402130000: switches_inputs = 0000010000000000, led = 0000010000000000, segs = 1000000, ans 7
+Time = 503130000: switches_inputs = 0000010000000000, led = 0000010000000000, segs = 1111001, ans 7
+Time = 603130000: switches_inputs = 0011111010110100, led = 0011111010110100, segs = 1111001, ans 7
+Time = 603135000: switches_inputs = 0011111010110100, led = 0011111010110100, segs = 0000110, ans 7
+Time = 704130000: switches_inputs = 0011111010110100, led = 0011111010110100, segs = 0110000, ans 7
+Time = 804130000: switches_inputs = 0010011100001110, led = 0010011100001110, segs = 0100100, ans 7
+Time = 905130000: switches_inputs = 0010011100001110, led = 0010011100001110, segs = 0010000, ans 7
+Time = 1005130000: switches_inputs = 0001011101111100, led = 0001011101111100, segs = 0010000, ans 7
+Time = 1005365000: switches_inputs = 0001011101111100, led = 0001011101111100, segs = 0000010, ans 7
+Time = 1106130000: switches_inputs = 0001011101111100, led = 0001011101111100, segs = 1111001, ans 7
+$stop called at time : 1206180 ns : File "C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab2/lab2/lab_2_top_level_tb.sv" Line 78

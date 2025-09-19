@@ -1,11 +1,18 @@
 Time resolution is 1 ps
 Time = 0: switches_inputs = xxxxxxxxxxxxxxxx, led = xxxxxxxxxxxxxxxx, segs = 1000000, ans x
-Time = 15000: switches_inputs = xxxxxxxxxxxxxxxx, led = xxxxxxxxxxxxxxxx, segs = 1000000, ans 0
-Time = 25000: switches_inputs = xxxxxxxxxxxxxxxx, led = xxxxxxxxxxxxxxxx, segs = 1111111, ans 7
-Time = 30000: switches_inputs = 0000000000000000, led = 0000000000000000, segs = 1000000, ans 7
-Time = 130000: switches_inputs = 1111111111111111, led = 1111111111111111, segs = 0001110, ans 7
-Time = 230000: switches_inputs = 0101010101010101, led = 0101010101010101, segs = 0010010, ans 7
-Time = 330000: switches_inputs = 1010101010101010, led = 1010101010101010, segs = 0001000, ans 7
-Time = 430000: switches_inputs = 1100110011001100, led = 1100110011001100, segs = 1000110, ans 7
-Time = 530000: switches_inputs = 0011001100110011, led = 0011001100110011, segs = 0110000, ans 7
-$stop called at time : 680 ns : File "C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/lab_1b_top_level_tb.sv" Line 67
+Time = 115000: switches_inputs = xxxxxxxxxxxxxxxx, led = xxxxxxxxxxxxxxxx, segs = 1000000, ans 0
+Time = 125000: switches_inputs = xxxxxxxxxxxxxxxx, led = xxxxxxxxxxxxxxxx, segs = 1111111, ans 7
+Time = 130000: switches_inputs = 0000000000000000, led = 0000000000000000, segs = 1000000, ans 7
+Time = 230000: switches_inputs = 1111111111111111, led = 1111111111111111, segs = 0001110, ans 7
+Time = 330000: switches_inputs = 0101010101010101, led = 0101010101010101, segs = 0010010, ans 7
+Time = 430000: switches_inputs = 1010101010101010, led = 1010101010101010, segs = 0001000, ans 7
+Time = 530000: switches_inputs = 1100110011001100, led = 1100110011001100, segs = 0100111, ans 7
+Time = 630000: switches_inputs = 0011011001011001, led = 0011011001011001, segs = 0110000, ans 7
+$stop called at time : 780 ns : File "C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab1b/lab_1b/lab_1b_top_level_tb.sv" Line 68
+Time = 1310845000: switches_inputs = 0011011001011001, led = 0011011001011001, segs = 0010000, ans14
+Time = 2621565000: switches_inputs = 0011011001011001, led = 0011011001011001, segs = 0010010, ans13
+Time = 3932285000: switches_inputs = 0011011001011001, led = 0011011001011001, segs = 0000010, ans11
+Time = 5243005000: switches_inputs = 0011011001011001, led = 0011011001011001, segs = 0110000, ans 7
+Time = 6553725000: switches_inputs = 0011011001011001, led = 0011011001011001, segs = 0010000, ans14
+Time = 7864445000: switches_inputs = 0011011001011001, led = 0011011001011001, segs = 0010010, ans13
+Time = 9175165000: switches_inputs = 0011011001011001, led = 0011011001011001, segs = 0000010, ans11
