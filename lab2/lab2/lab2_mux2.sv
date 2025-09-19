@@ -28,8 +28,6 @@ module lab2_mux2(
 
     always_comb begin
         y = ctrl ? s[1] : s[0];
-
-
     end
 
 endmodule
