@@ -1,0 +1,10 @@
+Time resolution is 1 ps
+Time = 0: s = 00, ctrl = 0
+Time = 200000: s = 01, ctrl = 0
+Time = 400000: s = 10, ctrl = 0
+Time = 600000: s = 11, ctrl = 0
+Time = 800000: s = 00, ctrl = 1
+Time = 1000000: s = 01, ctrl = 1
+Time = 1200000: s = 10, ctrl = 1
+Time = 1400000: s = 11, ctrl = 1
+$stop called at time : 1650 ns : File "C:/Users/fulbr/Documents/School Documents/ENEL453_2025/ENEL-453/lab2/lab2/lab2_mux2_tb.sv" Line 85
