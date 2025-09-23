@@ -14,11 +14,17 @@ module lab_3_top_level (
     // Internal signal declarations
 
     logic [15:0] switches_outputs;
+    logic [15:0] saved_switches_outputs;
+
+    logic [15:0] maybe_live_switches_outputs;
+
     logic [15:0] bcd_out;
     logic [15:0] display_segs;
+    
     logic        decimal_display;
 
     logic        nhold;
+    logic [1:0]  state; // 00 = switchesHEX, 01 = switchesBCD, 10 = savedHEX, 11 = savedBCD
 
     // Instantiate components
 
@@ -40,32 +46,40 @@ module lab_3_top_level (
     );
       
     bin_to_bcd BCDer(
-        .bin_in(switches_outputs),
+        .bin_in(maybe_live_switches_outputs),
         .bcd_out(bcd_out[15:0]),
         .clk(clk),
         .reset(reset)
     );
 
-    lab3_mux2 BCDMUX(
+    counter COUNTER4(
+        .btn(btnU),
+        .clk(clk),
+        .reset(reset),
+
+        .count(state)
+    )
+
+    mux2 SAVEDMUX(
         .s0(switches_outputs),
+        .s1(saved_switches_outputs),
+        .ctrl(state[1]),
+        .y(maybe_live_switches_outputs)
+    );
+
+    mux2 RADIXMUX(
+        .s0(maybe_live_switches_outputs),
         .s1(bcd_out),
-        .ctrl(decimal_display),
+        .ctrl(state[0]),
         .y(display_segs)
     );
 
-    counter RADIX_BUTTONTOGGLE(
-        .button(btnU),
-        .clk(clk),
-        .reset(reset),
-        .toggle(decimal_display)
-    );
-
     flop FLOP(
-        .inputs(display_segs),
+        .inputs(switches_outputs),
         .nhold(btnR),
         .clk(clk),
         .reset(reset),
-        .outputs(outputs)
+        .outputs(saved_switches_outputs)
     );
 
     /*
