@@ -19,7 +19,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module lab2_mux2(
+module lab3_mux2(
     input logic     [15:0] s0,
     input logic     [15:0] s1,
     input logic     ctrl,

@@ -1,8 +1,10 @@
-module lab_2_top_level (
+module lab_3_top_level (
     input  logic [15:0] switches_inputs, // slide switches (0 towards Basys3 board edge, 1 towards board center)
     input  logic        btnU,
     output logic [15:0] led, // mapped to the LEDs above the slide switches, LEDs: write a 1 to light LED, 0 to turn it off
     
+    input  logic        btnR,
+
     input  logic        clk,
     input  logic        reset,
     output logic        CA, CB, CC, CD, CE, CF, CG, DP,
@@ -15,6 +17,8 @@ module lab_2_top_level (
     logic [15:0] bcd_out;
     logic [15:0] display_segs;
     logic        decimal_display;
+
+    logic        nhold;
 
     // Instantiate components
 
@@ -42,19 +46,35 @@ module lab_2_top_level (
         .reset(reset)
     );
 
-    lab2_mux2 BCDMUX(
+    lab3_mux2 BCDMUX(
         .s0(switches_outputs),
         .s1(bcd_out),
         .ctrl(decimal_display),
         .y(display_segs)
     );
 
-    button_toggle BUTTONTOGGLE(
+    counter RADIX_BUTTONTOGGLE(
         .button(btnU),
         .clk(clk),
         .reset(reset),
         .toggle(decimal_display)
     );
+
+    flop FLOP(
+        .inputs(display_segs),
+        .nhold(btnR),
+        .clk(clk),
+        .reset(reset),
+        .outputs(outputs)
+    );
+
+    /*
+    debounce #(.clk_freq(100_000_000), .stable_time(50)) Button1 (
+        .clk(clk),
+        .reset(reset),
+        .button(),
+    )
+    */
 
     assign led = switches_outputs;
 

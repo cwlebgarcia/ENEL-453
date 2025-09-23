@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module lab_2_top_level_tb();
+module lab_3_top_level_tb();
 
     // Parameters
     parameter CLK_PERIOD = 10; // 10ns for 100MHz clock
@@ -10,6 +10,7 @@ module lab_2_top_level_tb();
     // Signals
     logic [15:0] switches_inputs;
     logic        btnU;
+    logic        btnR;
     logic [15:0] led;
     logic [6:0]  segs;
     logic [3:0]  ans;
@@ -25,9 +26,10 @@ module lab_2_top_level_tb();
     end
 
     // Instantiate the Unit Under Test (UUT)
-    lab_2_top_level uut (
+    lab_3_top_level uut (
         .switches_inputs(switches_inputs),
         .btnU(btnU),
+        .btnR(btnR),
         .led(led),
         .clk(clk),
         .reset(reset),
@@ -39,6 +41,7 @@ module lab_2_top_level_tb();
     initial begin
         // Initialize inputs
         btnU = 0;
+        btnR = 0;
 
         reset = 0;
         #(CLK_PERIOD);
@@ -52,9 +55,11 @@ module lab_2_top_level_tb();
         // Test case 0:
         switches_inputs = 16'b0000_0000_0000_0000; #LONG_WAIT; //#(20*CLK_PERIOD);
         btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
+        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
 
         // Test case 1:
-        switches_inputs = 16'd456;   #LONG_WAIT; //#(20*CLK_PERIOD);
+        switches_inputs = 16'hA456;   #LONG_WAIT; //#(20*CLK_PERIOD);
+        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
         btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
         
         // Test case 2:

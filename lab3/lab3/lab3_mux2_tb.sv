@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module lab2_mux2_tb();
+module lab3_mux2_tb();
 
 
     // Parameters
@@ -36,7 +36,7 @@ module lab2_mux2_tb();
 
 
     // Instantiate the Unit Under Test (UUT)
-    lab2_mux2 uut (
+    lab3_mux2 uut (
         .s(s),
         .ctrl(ctrl),
         .y(y)
