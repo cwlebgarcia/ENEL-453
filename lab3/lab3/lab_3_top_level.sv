@@ -17,13 +17,10 @@ module lab_3_top_level (
     logic [15:0] saved_switches_outputs;
 
     logic [15:0] maybe_live_switches_outputs;
-
     logic [15:0] bcd_out;
-    logic [15:0] display_segs;
-    
-    logic        decimal_display;
 
-    logic        nhold;
+    logic [15:0] display_segs;
+
     logic [1:0]  state; // 00 = switchesHEX, 01 = switchesBCD, 10 = savedHEX, 11 = savedBCD
 
     // Instantiate components
@@ -52,13 +49,13 @@ module lab_3_top_level (
         .reset(reset)
     );
 
-    counter COUNTER4(
+    counter #(.count_width(2)) COUNTER4(
         .btn(btnU),
         .clk(clk),
         .reset(reset),
 
         .count(state)
-    )
+    );
 
     mux2 SAVEDMUX(
         .s0(switches_outputs),
@@ -89,7 +86,7 @@ module lab_3_top_level (
         .button(),
     )
     */
-
+    //assign led = display_segs;
     assign led = switches_outputs;
 
 endmodule
