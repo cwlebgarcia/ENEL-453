@@ -5,12 +5,9 @@ module flop (
     input  logic        reset,
 
     output logic [15:0] outputs
-     
 );
 
     logic [15:0] mem;
-
-
 
     always_ff @(posedge clk) begin
         if(reset) begin
