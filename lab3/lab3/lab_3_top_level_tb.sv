@@ -4,8 +4,8 @@ module lab_3_top_level_tb();
 
     // Parameters
     parameter CLK_PERIOD = 10; // 10ns for 100MHz clock
-    parameter SHORT_WAIT = 1000;
-    parameter LONG_WAIT = 100000;
+    parameter SHORT_WAIT = (100 *CLK_PERIOD);
+    parameter LONG_WAIT = (10000*CLK_PERIOD);
 
     // Signals
     logic [15:0] switches_inputs;
@@ -54,28 +54,34 @@ module lab_3_top_level_tb();
         
         // Test case 0:
         switches_inputs = 16'b0000_0000_0000_0000; #LONG_WAIT; //#(20*CLK_PERIOD);
-        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
-        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
 
         // Test case 1:
         switches_inputs = 16'hA456;   #LONG_WAIT; //#(20*CLK_PERIOD);
-        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
-        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
+        btnR = 1;#SHORT_WAIT;btnR = 0; #LONG_WAIT;
         
         // Test case 2:
-        switches_inputs = 16'd1024; #LONG_WAIT; // #(20*CLK_PERIOD);
+        switches_inputs = 16'd2047; #LONG_WAIT; // #(20*CLK_PERIOD);
+        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
+        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
+        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
         btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
 
         // Test case 3:
         switches_inputs = 16'd16052;  #LONG_WAIT; // #(20*CLK_PERIOD);
         btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
+        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
+        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
+        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
 
         // Test case 4:
         switches_inputs = 16'd9998; #LONG_WAIT; // #(20*CLK_PERIOD);
-        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
+        btnR = 1;#SHORT_WAIT;btnR = 0; #LONG_WAIT;
 
         // Test case 5:
         switches_inputs = 16'd6012; #LONG_WAIT; // #(20*CLK_PERIOD);
+        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
+        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
+        btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
         btnU = 1;#SHORT_WAIT;btnU = 0; #LONG_WAIT;
 
         // End simulation
