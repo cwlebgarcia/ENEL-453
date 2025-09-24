@@ -1,11 +1,11 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 1ns
 
 module lab_3_top_level_tb();
 
     // Parameters
     parameter CLK_PERIOD = 10; // 10ns for 100MHz clock
-    parameter SHORT_WAIT = (100 *CLK_PERIOD);
-    parameter LONG_WAIT = (10000*CLK_PERIOD);
+    parameter SHORT_WAIT = (1500000*CLK_PERIOD);
+    parameter LONG_WAIT =  (10000000*CLK_PERIOD);
 
     // Signals
     logic [15:0] switches_inputs;
@@ -40,6 +40,7 @@ module lab_3_top_level_tb();
     // Test stimulus
     initial begin
         // Initialize inputs
+        switches_inputs = 16'b0000_0000_0000_0000;
         btnU = 0;
         btnR = 0;
 
