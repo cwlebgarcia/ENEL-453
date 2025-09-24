@@ -1,0 +1,23 @@
+Switches rise in us
+580
+542
+610
+650
+650
+620
+730
+660
+740
+660
+
+Switches Fall in us
+300
+240
+290
+235
+
+Button rise (No bouncing occurs)
+~50
+
+button fall (No bouncing occurs)
+~50
