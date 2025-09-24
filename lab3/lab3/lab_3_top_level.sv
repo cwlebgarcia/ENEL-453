@@ -14,6 +14,9 @@ module lab_3_top_level (
     // Internal signal declarations
 
     logic [15:0] switches_outputs;
+    logic        btnU_sync;
+    logic        btnR_sync;
+
     logic [15:0] saved_switches_outputs;
 
     logic [15:0] maybe_live_switches_outputs;
@@ -24,12 +27,28 @@ module lab_3_top_level (
     logic [1:0]  state; // 00 = switchesHEX, 01 = switchesBCD, 10 = savedHEX, 11 = savedBCD
 
     // Instantiate components
-
-    switch_logic SWITCHES (
-         .switches_inputs(switches_inputs),
-         .switches_outputs(switches_outputs)
+    switch_debounce #(.clk_freq(100_000_000), .stable_time(10), .input_count(16)) 
+                    SWITCH_DEBOUNCER(
+        .clk(clk),
+        .reset(reset),
+        .switch_inputs(switches_inputs),
+        .switch_outputs(switches_outputs)
     );
 
+    debounce #(.clk_freq(100_000_000), .stable_time(2)) BTNu_DEBOUNCER (
+        .clk(clk),
+        .reset(reset),
+        .button(btnU),
+        .result(btnU_sync)
+    );
+
+    debounce #(.clk_freq(100_000_000), .stable_time(2)) BTNr_DEBOUNCER (
+        .clk(clk),
+        .reset(reset),
+        .button(btnR),
+        .result(btnR_sync)
+    );
+    
     seven_segment_display_subsystem SEVEN_SEG(
         .clk(clk),
         .reset(reset),
@@ -50,7 +69,7 @@ module lab_3_top_level (
     );
 
     counter #(.count_width(2)) COUNTER4(
-        .btn(btnU),
+        .btn(btnU_sync),
         .clk(clk),
         .reset(reset),
 
@@ -73,20 +92,13 @@ module lab_3_top_level (
 
     flop FLOP(
         .inputs(switches_outputs),
-        .nhold(btnR),
+        .nhold(btnR_sync),
         .clk(clk),
         .reset(reset),
         .outputs(saved_switches_outputs)
     );
-
-    /*
-    debounce #(.clk_freq(100_000_000), .stable_time(50)) Button1 (
-        .clk(clk),
-        .reset(reset),
-        .button(),
-    )
-    */
     //assign led = display_segs;
+    //assign led = switches_inputs;
     assign led = switches_outputs;
 
 endmodule
