@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Sep 26 12:29:52 2025
+# Process ID         : 9760
+# Current directory  : C:/Users/caleb/Documents/ENEL-453/lab3/Lab_3er/Lab_3er.runs/synth_1
+# Command line       : vivado.exe -log lab_3_top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab_3_top_level.tcl
+# Log file           : C:/Users/caleb/Documents/ENEL-453/lab3/Lab_3er/Lab_3er.runs/synth_1/lab_3_top_level.vds
+# Journal file       : C:/Users/caleb/Documents/ENEL-453/lab3/Lab_3er/Lab_3er.runs/synth_1\vivado.jou
+# Running On         : RockCollector
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 5700U with Radeon Graphics         
+# CPU Frequency      : 1797 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16486 MB
+# Swap memory        : 1073 MB
+# Total Virtual      : 17559 MB
+# Available Virtual  : 3225 MB
+#-----------------------------------------------------------
+source lab_3_top_level.tcl -notrace
+create_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 490.473 ; gain = 209.934
+Command: synth_design -top lab_3_top_level -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+WARNING: [Common 17-348] Failed to get the license for feature 'Synthesis' and/or device 'xc7vx485t'. Explanation: The license feature Synthesis could not be found.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+0 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-345] A valid license was not found for feature 'Synthesis' and/or device 'xc7vx485t'. Please run the Vivado License Manager for assistance in determining
+which features and devices are licensed for your system.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". If you are using a license server, verify that the license server is up and running a version of the xilinx daemon that is compatible with the version of Xilinx software that you are using. Note: Vivado 2021.1 and later versions require upgrading your license server tools to the Flex 11.17.2.0 versions. Please confirm with your license admin that the correct version of the license server tools are installed.
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 26 12:30:09 2025...

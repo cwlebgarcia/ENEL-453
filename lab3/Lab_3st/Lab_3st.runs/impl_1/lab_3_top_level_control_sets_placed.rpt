@@ -1,0 +1,104 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Fri Sep 26 12:35:57 2025
+| Host         : RockCollector running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab_3_top_level_control_sets_placed.rpt
+| Design       : lab_3_top_level
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    26 |
+|    Minimum number of control sets                        |    26 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    97 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    26 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    22 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              58 |           33 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              25 |            8 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             420 |          108 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------+---------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |             Enable Signal             |            Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+---------------------------------------+---------------------------------------+------------------+----------------+--------------+
+| ~clk_IBUF_BUFG |                                       |                                       |                2 |              3 |         1.50 |
+|  clk_IBUF_BUFG | BCDer/bcd_out[12]_i_1_n_0             | FLOP/SR[0]                            |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG |                                       | FLOP/SR[0]                            |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | BCDer/bcd_out[15]_i_1_n_0             | reset_IBUF                            |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG | BTNr_DEBOUNCER/E[0]                   | reset_IBUF                            |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG | BTNr_DEBOUNCER/count[0]_i_2__0_n_0    | BTNr_DEBOUNCER/count[0]_i_1__0_n_0    |                5 |             18 |         3.60 |
+|  clk_IBUF_BUFG | BTNu_DEBOUNCER/sel                    | BTNu_DEBOUNCER/count[0]_i_1_n_0       |                5 |             18 |         3.60 |
+|  clk_IBUF_BUFG |                                       | reset_IBUF                            |                7 |             20 |         2.86 |
+|  clk_IBUF_BUFG | SWITCH_DEBOUNCER/count[0][0]_i_2_n_0  | SWITCH_DEBOUNCER/count[0][0]_i_1_n_0  |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG | SWITCH_DEBOUNCER/count[8][0]_i_2_n_0  | SWITCH_DEBOUNCER/count[8][0]_i_1_n_0  |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG | SWITCH_DEBOUNCER/count[10][0]_i_2_n_0 | SWITCH_DEBOUNCER/count[10][0]_i_1_n_0 |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG | SWITCH_DEBOUNCER/count[3][0]_i_2_n_0  | SWITCH_DEBOUNCER/count[3][0]_i_1_n_0  |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG | SWITCH_DEBOUNCER/count[13][0]_i_2_n_0 | SWITCH_DEBOUNCER/count[13][0]_i_1_n_0 |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG | SWITCH_DEBOUNCER/count[4][0]_i_2_n_0  | SWITCH_DEBOUNCER/count[4][0]_i_1_n_0  |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG | SWITCH_DEBOUNCER/count[7][0]_i_2_n_0  | SWITCH_DEBOUNCER/count[7][0]_i_1_n_0  |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG | SWITCH_DEBOUNCER/count[14][0]_i_2_n_0 | SWITCH_DEBOUNCER/count[14][0]_i_1_n_0 |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG | SWITCH_DEBOUNCER/count[2][0]_i_2_n_0  | SWITCH_DEBOUNCER/count[2][0]_i_1_n_0  |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG | SWITCH_DEBOUNCER/count[9][0]_i_2_n_0  | SWITCH_DEBOUNCER/count[9][0]_i_1_n_0  |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG | SWITCH_DEBOUNCER/count[12][0]_i_2_n_0 | SWITCH_DEBOUNCER/count[12][0]_i_1_n_0 |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG | SWITCH_DEBOUNCER/count[1][0]_i_2_n_0  | SWITCH_DEBOUNCER/count[1][0]_i_1_n_0  |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG | SWITCH_DEBOUNCER/count[6][0]_i_2_n_0  | SWITCH_DEBOUNCER/count[6][0]_i_1_n_0  |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG | SWITCH_DEBOUNCER/count[5][0]_i_2_n_0  | SWITCH_DEBOUNCER/count[5][0]_i_1_n_0  |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG | SWITCH_DEBOUNCER/count[11][0]_i_2_n_0 | SWITCH_DEBOUNCER/count[11][0]_i_1_n_0 |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG | SWITCH_DEBOUNCER/count[15][0]_i_2_n_0 | SWITCH_DEBOUNCER/count[15][0]_i_1_n_0 |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG | BCDer/scratch[31]_i_1_n_0             | FLOP/SR[0]                            |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG |                                       |                                       |               31 |             55 |         1.77 |
++----------------+---------------------------------------+---------------------------------------+------------------+----------------+--------------+
+
+
