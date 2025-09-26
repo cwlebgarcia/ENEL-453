@@ -44,7 +44,7 @@ module switch_debounce
     always_ff @(posedge clk) begin
         for (i = 0; i < input_count; i = i + 1) begin
             if(reset) begin
-                count[i] <= 0;
+                count[i] <= 0;   
             end
             else if(sclr[i]) begin // clears count if xor is high (xor inputs are different, meaning button input is not stable so reset the count)
                 count[i] <= 0;
