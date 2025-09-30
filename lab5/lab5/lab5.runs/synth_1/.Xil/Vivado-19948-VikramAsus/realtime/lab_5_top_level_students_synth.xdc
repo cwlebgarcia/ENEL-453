@@ -1,0 +1,8 @@
+set_property SRC_FILE_INFO {cfile:c:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab5/lab5/lab5.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc rfile:../../../../../lab5.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc id:1 order:EARLY scoped_inst:XADC_INST} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab5/lab5/Basys3_Lab_5.xdc rfile:../../../../../Basys3_Lab_5.xdc id:2} [current_design]
+set_property src_info {type:SCOPED_XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property IS_IP_OOC_CELL true [get_cells XADC_INST]
+set_property src_info {type:XDC file:2 line:10 export:INPUT save:INPUT read:READ} [current_design]
+create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_ports clk]
+set_property src_info {type:TCL file:{} line:-1 export:INPUT save:INPUT read:READ} [current_design]
+set_property KEEP_HIERARCHY SOFT [get_cells XADC_INST]
