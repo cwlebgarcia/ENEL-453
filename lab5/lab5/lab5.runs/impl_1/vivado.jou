@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Sep 29 18:20:09 2025
+# Process ID         : 33824
+# Current directory  : C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab5/lab5/lab5.runs/impl_1
+# Command line       : vivado.exe -log lab_5_top_level_students.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab_5_top_level_students.tcl -notrace
+# Log file           : C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab5/lab5/lab5.runs/impl_1/lab_5_top_level_students.vdi
+# Journal file       : C:/Users/vikra/Documents/School/ThirdYearEng/FALL/ENEL453/ENEL-453/lab5/lab5/lab5.runs/impl_1\vivado.jou
+# Running On         : VikramAsus
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-1335U
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 12
+# Host memory        : 16786 MB
+# Swap memory        : 13958 MB
+# Total Virtual      : 30745 MB
+# Available Virtual  : 7962 MB
+#-----------------------------------------------------------
+source lab_5_top_level_students.tcl -notrace
